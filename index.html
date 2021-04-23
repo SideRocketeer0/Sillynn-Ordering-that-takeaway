@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://unpkg.com/brain.js@1.6.0/browser.js"></script>
+    <title>Danny's Decidor</title>
+    <style media="screen">
+      button{
+        padding: 15px 32px;
+        display: inline-block;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        font-size: 16px;
+
+      }
+      button:hover{
+        color: white;
+        background-color: #556B2F;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+      }
+      h2{
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Should You Order That Takeaway??</h1>
+    <h3>Select all that apply:</h3>
+    <button id="healthy" onclick="change('healthy')">Healthy</button>
+    <button id="fried" onclick="change('fried')">Fried</button>
+    <button id="meat" onclick="change('meat')">protein</button>
+    <button id="tasty" onclick="change('tasty')">Tasty</button>
+    <button id="new" onclick="change('new')">Something New</button>
+    <button id="fatty" onclick="change('fatty')">High Fat Content</button>
+    <button id="notTasty" onclick="change('notTasty')">Only place that is open</button>
+    <button id="unhealthy" onclick="change('unhealthy')">Unhealthy</button>
+    <button id="iAmBusy" onclick="change('iAmBusy')">I should really do my homework</button>
+    <button id="deserve" onclick="change('deserve')">I've been the gym I deserve this</button>
+    <button id="dontDeserve" onclick="change('dontDeserve')">I skipped leg day, don't deserve</button>
+    <button id="amSad" onclick="change('amSad')">I'm sad, want comfort food</button>
+
+
+
+    <h3>Click here to let the computer decide</h3>
+    <button type="button" onclick="decide()">Submit</button>
+    <h2 id="yes"></h2>
+    <script src="script.js"></script>
+  </body>
+</html>
